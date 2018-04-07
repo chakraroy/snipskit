@@ -76,6 +76,8 @@ sudo systemctl enable pixel.service
 sudo systemctl start pixel.service
 sudo systemctl status pixel.service
 ```
+This ervice file has coded that the pixel.py file is located in the /home/pi directory (you can change it to where every you like as long as thats changed in the service file)
+
 This copies the service file to the Pis service directory, we change the pixel.py file to have execution permission and then enable/start the service and check its status to make sure its working or if there was a problem
 
 
