@@ -47,7 +47,7 @@ And then build some bundles of what intents your assistant has to learn about.</
 #### Download and install your assistant onto the Pi
 **copy** the downloaded assistant file from your computer to the pi. This command is run from your computer not the Pi. It will copy the file from the location provided to the Pi's home directory
 
-`scp <folder_location/assistant.zip pi@raspberrypi.local:/home/pi/assistant.zip`
+`scp <folder_location>/assistant_proj########.zip pi@raspberrypi.local:/home/pi/assistant.zip`
 
 
 **remove** old assistant if you have installed one previously
