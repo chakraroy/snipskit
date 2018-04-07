@@ -64,6 +64,7 @@ _____
 
 Install some extra needed python libraries 
 ```
+sudo apt-get install python-setuptools
 sudo apt-get install python-dev
 sudo pip install paho-mqtt
 sudo pip install spidev
