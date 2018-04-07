@@ -10,7 +10,8 @@ sudo apt-get upgrade
 ### Install git and pip to install from github and other python libs we will need
 _____
 ```
-sudo apt-get install python-pip python-git
+sudo apt-get install python-pip
+sudo apt-get install python-git
 ```
 
 ### Download the Respeaker driver for the mic
