@@ -37,9 +37,6 @@ def say(session_id, text):
     print(text)
     mqtt_client.publish('hermes/dialogueManager/endSession', json.dumps({'text': text, "sessionId" : session_id}))
 
-def lookupMarkByName(name):
-    return mydict.get(name)
-
 mydict = {  'twilight sparkle' : 'six-pointed star with five smaller stars',
             'rarity' : 'three lozenge diamonds',
             'applejack' : 'three red apples',
