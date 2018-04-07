@@ -1,0 +1,12 @@
+[Unit]
+Description=Snips Pixels
+After=network.target
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/python pixel.py
+WorkingDirectory=/home/pi
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
