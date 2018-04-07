@@ -57,8 +57,11 @@ And then build some bundles of what intents your assistant has to learn about.</
 
 `unzip /home/pi/assistant.zip -d /usr/share/snips`
 
-#### Setup the python code to 'do something' when the intent is detected
+I have included my demo assistant file used in the video here
 _____
+
+#### Setup the python code to 'do something' when the intent is detected
+
 Install some extra needed python libraries 
 ```
 sudo pip install paho-mqtt
