@@ -32,6 +32,8 @@ sudo apt-key adv --keyserver pgp.mit.edu --recv-keys D4F50CDCA10A2849
 sudo apt-get update
 sudo apt-get install -y snips-platform-voice
 
+sudo apt-get install snips-watch
+
 sudo reboot
 ```
 
