@@ -66,9 +66,11 @@ Install some extra needed python libraries
 ```
 sudo apt-get install python-setuptools
 sudo apt-get install python-dev
-sudo pip install paho-mqtt
-sudo pip install spidev
+pip install wheel
+pip install paho-mqtt
+pip install spidev
 ```
+When I tried to install paho-mqtt and spidev with `sudo` I ran into problems, but works fine without `sudo`
 
 To control the LEDs on the Respeaker mic HAT we need to enable SPI
 `sudo raspi-config` 
