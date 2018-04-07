@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 ExecStart=/usr/bin/python pixel.py
-WorkingDirectory=/home/pi
+WorkingDirectory=/home/pi/snipskit
 Restart=always
  
 [Install]
