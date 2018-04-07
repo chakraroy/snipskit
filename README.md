@@ -66,9 +66,9 @@ Install some extra needed python libraries
 ```
 sudo apt-get install python-setuptools
 sudo apt-get install python-dev
-pip install wheel
-pip install paho-mqtt
-pip install spidev
+sudo pip install wheel
+sudo pip install paho-mqtt
+sudo pip install spidev
 ```
 When I tried to install paho-mqtt and spidev with `sudo` I ran into problems, but works fine without `sudo`
 
@@ -77,13 +77,14 @@ To control the LEDs on the Respeaker mic HAT we need to enable SPI
 
 We are going to make this a *service* on the Pi so it loads after a reboot
 ```
+git clone https://github.com/oziee/snipskit.git
 sudo cp pixel.service /lib/systemd/system/pixel.service
 chmod +x pixel.py
 sudo systemctl enable pixel.service
 sudo systemctl start pixel.service
 sudo systemctl status pixel.service
 ```
-This ervice file has coded that the pixel.py file is located in the /home/pi directory (you can change it to where every you like as long as thats changed in the service file)
+This service file has coded that the pixel.py file is located in the /home/pi/snipskit directory (you can change it to where every you like as long as thats changed in the service file)
 
 This copies the service file to the Pis service directory, we change the pixel.py file to have execution permission and then enable/start the service and check its status to make sure its working or if there was a problem
 
