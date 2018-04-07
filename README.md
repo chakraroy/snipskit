@@ -59,7 +59,7 @@ And then build some bundles of what intents your assistant has to learn about.</
 
 `sudo unzip /home/pi/assistant.zip -d /usr/share/snips`
 
-I have included my demo assistant file used in the video here
+*I have included my demo assistant file used in the video here*
 _____
 
 #### Setup the python code to 'do something' when the intent is detected
