@@ -45,19 +45,19 @@ And then build some bundles of what intents your assistant has to learn about.</
 
 
 #### Download and install your assistant onto the Pi
-**copy** the downloaded assistant file from your computer to the pi
+**copy** the downloaded assistant file from your computer to the pi. This command is run from your computer not the Pi. It will copy the file from the location provided to the Pi's home directory
 
 `scp <folder_location/assistant.zip pi@raspberrypi.local:/home/pi/assistant.zip`
 
 
 **remove** old assistant if you have installed one previously
 
-`rm -rf /usr/share/snips/assistant`
+`sudo rm -rf /usr/share/snips/assistant`
 
 
 **install** the newly downloaded assistant from the console
 
-`unzip /home/pi/assistant.zip -d /usr/share/snips`
+`sudo unzip /home/pi/assistant.zip -d /usr/share/snips`
 
 I have included my demo assistant file used in the video here
 _____
